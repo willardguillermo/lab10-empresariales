@@ -4,6 +4,10 @@ Guillermo Willard
 4 de noviembre de 2026
 Docente de la guía  Michael Montgomery Rosell
 
+### Repositorio del laboratorio
+
+[https://github.com/willardguillermo/laboratorio-9-empresariales](https://github.com/willardguillermo/laboratorio-9-empresariales)
+
 ## Resultado y alcance
 
 Se completó una cartelera de ocho películas con componentes funcionales, JSX, props y listas. También se resolvió el extra de la captura: se implementaron ocho componentes, se diagnosticaron seis causas de error del ejemplo de IA y se corrigió una copia independiente. La aplicación final pasa las 47 pruebas del proyecto y compila para producción.
@@ -25,7 +29,7 @@ El desarrollo parte de la plantilla pública Hellscythe25/dae-s09-react-ia, comm
 
 Se clonó la plantilla, se comprobaron las versiones y se instalaron las dependencias. El servidor de desarrollo se inició en localhost. Las 43 pruebas de team fallaron inicialmente porque los componentes lanzaban errores TODO. El navegador mostró una página vacía y registró el TODO de Header; en este entorno no apareció el recuadro rojo descrito por la plantilla.
 
-El trabajo se realizó con asistencia de Codex por solicitud del alumno. La tabla de uso de IA declara la generación y las comprobaciones. La publicación en el repositorio del alumno queda pendiente del enlace que proporcionará; no se realizó ninguna subida a GitHub ni al campus virtual.
+El trabajo se realizó con asistencia de Codex por solicitud del alumno. La tabla de uso de IA declara la generación y las comprobaciones. El proyecto y su historial se publicaron en el repositorio del alumno indicado en este informe. La entrega en el campus virtual corresponde al alumno.
 
 ## Componentes y paso de datos
 
@@ -198,13 +202,13 @@ Verificación e informe | Ejecutó comandos, comprobaciones en Chrome y capturas
 
 ### Commits del proceso
 
-79e600b registra el alcance y el estado inicial. ba533d1 implementa la cartelera y los componentes. 8dfbfcc corrige la copia de IA. Un cuarto commit reúne la verificación, las capturas y el informe. La historia completa puede consultarse con git log --oneline; el commit base 861176c corresponde al autor de la plantilla.
+79e600b registra el alcance y el estado inicial. ba533d1 implementa la cartelera y los componentes. 8dfbfcc corrige la copia de IA. 6c55890 reúne la verificación, las capturas y el informe. Un quinto commit incorpora el enlace del repositorio y documenta su publicación. La historia completa puede consultarse con git log --oneline; el commit base 861176c corresponde al autor de la plantilla.
 
-### Conclusiones y entrega pendiente
+### Conclusiones y entrega
 
 La separación de datos y presentación permite reutilizar los componentes cambiando sus props. Las pruebas de reordenamiento demostraron por qué la key debe identificar la película; el caso vacío mostró por qué conviene una condición explícita. La comparación entre el HTML inyectado y el texto literal confirmó el riesgo de interpretar contenido ajeno como HTML.
 
-La entrega local contiene código, dependencias declaradas, evidencias e historia Git. Solo queda recibir el enlace del repositorio del alumno para publicarla y que Guillermo Willard revise y entregue el informe en el campus virtual. No se realizó una prueba en teléfono físico ni se acredita revisión de materiales no suministrados.
+El repositorio de Guillermo Willard contiene el código, las dependencias declaradas, las evidencias y la historia Git del laboratorio. La publicación conserva los cuatro commits del desarrollo y añade la actualización de este informe con el enlace. Guillermo Willard debe revisar y entregar el informe en el campus virtual. No se realizó una prueba en teléfono físico ni se acredita revisión de materiales no suministrados.
 
 ## Referencias y reproducción
 

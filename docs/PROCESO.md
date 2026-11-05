@@ -4,7 +4,7 @@ Fecha de trabajo: 4 de noviembre de 2026 (America/Lima).
 
 ## Alcance y procedencia
 
-Se integra la cartelera de la guía GLAB-S09-MMONTGOMERY-2026-02 y el extra de la captura. La base es https://github.com/Hellscythe25/dae-s09-react-ia, commit 861176c. Se conserva su historia, sus pruebas, datos y ejemplos de IA. El destino del equipo se añadirá cuando el usuario lo facilite; no se ha publicado nada.
+Se integra la cartelera de la guía GLAB-S09-MMONTGOMERY-2026-02 y el extra de la captura. La base es https://github.com/Hellscythe25/dae-s09-react-ia, commit 861176c. Se conserva su historia, sus pruebas, datos y ejemplos de IA. El destino es https://github.com/willardguillermo/laboratorio-9-empresariales. La etapa inicial se completó localmente y se publicó después de recibir el enlace del alumno.
 
 ## Preparación y estado inicial
 
@@ -61,3 +61,10 @@ Verificaciones del navegador: ocho tarjetas, ocho clasificaciones, cero imágene
 - `ai/`, `duel/tests/`, los datos originales y `package-lock.json` sin cambios respecto de 861176c.
 
 Alumno indicado por el usuario: Guillermo Willard. Sin grupo por solicitud expresa. El nombre y correo de autor de los commits proceden de la configuración Git existente del equipo; no se modificó dicha configuración. No se consultó el campus virtual ni un proyecto previo de semana 8 que no fue proporcionado. No se simuló una entrega en GitHub o Canvas.
+
+
+## Publicación en el repositorio del alumno
+
+El usuario proporcionó https://github.com/willardguillermo/laboratorio-9-empresariales.git y autorizó subir el proyecto e incluir ese enlace en el informe. Se comprobó que el destino estaba vacío y que existía acceso de escritura. Se configuró `origin` y se publicó `main` con los cuatro commits del laboratorio, conservando la historia original de la plantilla y sin forzar ni sobrescribir ramas.
+
+La primera subida se verificó comparando `git ls-remote origin refs/heads/main` con `git rev-parse HEAD`: ambos devolvieron 6c55890abedf8efe2100f82aef8cb96dd78f7e09. Se actualizó el informe en Word y Markdown con un enlace al repositorio y se corrigieron las referencias a una publicación pendiente. El quinto commit documenta esta actualización y se publica también en `main`.

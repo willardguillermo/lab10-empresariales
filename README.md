@@ -2,7 +2,7 @@
 
 **Alumno: Guillermo Willard** · Desarrollo de Aplicaciones Empresariales · 4 de noviembre de 2026.
 
-Cartelera de ocho películas construida con React y Vite, junto al extra de revisión de respuestas de IA por pruebas. Se implementó con asistencia de Codex, declarada en el informe. Está terminada y verificada localmente; falta vincular el repositorio del alumno para publicarla.
+Cartelera de ocho películas construida con React y Vite, junto al extra de revisión de respuestas de IA por pruebas. Se implementó con asistencia de Codex, declarada en el informe. Está terminada, verificada y publicada en el [repositorio de Guillermo Willard](https://github.com/willardguillermo/laboratorio-9-empresariales).
 
 ## Ejecutar
 
@@ -58,8 +58,8 @@ public/
 
 La estructura del extra prescribe un archivo por componente en `team/`; se conserva para que funcionen sus importaciones y verificadores. La sinopsis y el mensaje del agente contienen etiquetas de prueba deliberadas. React las presenta como texto y no se interpreta su instrucción como una acción. Las clasificaciones y el contacto son ficticios para la demostración académica.
 
-## Historia y publicación pendiente
+## Historia y publicación
 
-La base es [Hellscythe25/dae-s09-react-ia](https://github.com/Hellscythe25/dae-s09-react-ia), commit `861176c`. Se conserva su historia y se añaden cuatro commits del laboratorio por etapas. El remoto de origen queda identificado como `upstream`. No se ha realizado push.
+La base es [Hellscythe25/dae-s09-react-ia](https://github.com/Hellscythe25/dae-s09-react-ia), commit `861176c`. Se conserva su historia y se añaden cuatro commits del desarrollo por etapas, más un quinto commit con el enlace del repositorio en el informe. La plantilla se identifica como `upstream` y el repositorio del alumno como `origin`.
 
-Cuando el alumno facilite su repositorio, se configurará como `origin` y se publicarán los commits sin sobrescribir historia existente. La subida al campus virtual corresponde al alumno.
+El código, las evidencias y el informe están publicados en la rama `main` de [willardguillermo/laboratorio-9-empresariales](https://github.com/willardguillermo/laboratorio-9-empresariales). La subida al campus virtual corresponde al alumno.
