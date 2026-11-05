@@ -25,3 +25,18 @@ Se escribieron los ocho componentes de `src/duel/team/`, se compusieron en `App`
 `npm run duel`: **43 de 43 aprobadas**. Evidencia: `evidencias/04-team-final.txt`.
 
 La adaptación móvil usa rejilla de dos columnas, una columna para anchos menores de 350 px, viewport con zoom permitido, foco visible y enlaces con `touch-action: manipulation`. La validación automatizada en un viewport móvil no sustituye la comprobación táctil en un teléfono físico.
+
+## Corrección de la copia de IA
+
+`npm run fixed:init` creó `src/duel/fixed/`. Antes de corregir, `duel:fixed` reprodujo 29 aprobadas y 14 fallidas. Después de corregir seis archivos, **43 de 43 aprobadas**. `Header` y `AgentMessage` eran correctos y se conservaron.
+
+| Tarea | Categoría y causa | Evidencia del original | Arreglo en fixed |
+| --- | --- | --- | --- |
+| T2 Footer | Propiedad JSX incorrecta | React avisa `Invalid DOM property` por `class` | Usar `className` |
+| T3 MovieCard | Accesibilidad | No encuentra imagen con nombre igual al título | Añadir `alt={movie.title}` |
+| T4 Showtimes | Condición de lista vacía | `[]` es verdadero y `0 && ...` renderiza `0`; falta el mensaje | Retornar el mensaje si `times.length === 0` |
+| T5 MovieList | Identidad de elementos | Al invertir o quitar una película cambia el nodo de las otras | Usar `movie.id` en lugar del índice |
+| T6 Synopsis | Inyección de HTML y XSS | Aparecen `img` y `b`; `window.__xss` vale 1 | Renderizar `{text}` como texto |
+| T7 Hero | Contrato de props | Se recibe `movie` pero se lee `film.title`, que es undefined | Desestructurar y usar `movie` |
+
+Hay seis causas, no seis pruebas fallidas: varios verificadores detectan efectos de un mismo error. Los registros completos están en `02-ia-original.txt`, `05-fixed-inicial.txt` y `06-fixed-final.txt`.
