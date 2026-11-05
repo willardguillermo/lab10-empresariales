@@ -1,0 +1,38 @@
+{
+  "cards": 8,
+  "brokenImages": 0,
+  "xss": "undefined",
+  "injectedImages": 0,
+  "idsUnique": true,
+  "classificationCount": 8,
+  "anchors": [
+    {
+      "href": "#contenido",
+      "targetExists": true
+    },
+    {
+      "href": "#cartelera",
+      "targetExists": true
+    },
+    {
+      "href": "#proximamente",
+      "targetExists": true
+    },
+    {
+      "href": "#contacto",
+      "targetExists": true
+    },
+    {
+      "href": "#horarios-1",
+      "targetExists": true
+    }
+  ],
+  "featuredAnchor": true,
+  "footerPhone": 1,
+  "footerEmail": 1,
+  "desktopOverflow": false,
+  "mobileOverflow": false,
+  "mobileCardCount": 8,
+  "narrowOverflow": false,
+  "consoleErrors": []
+}

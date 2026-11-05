@@ -16,7 +16,7 @@ Se integra la cartelera de la guía GLAB-S09-MMONTGOMERY-2026-02 y el extra de l
 
 ## Autoría
 
-Trabajo implementado y verificado por Codex con asistencia de IA a solicitud del usuario. El usuario revisará la entrega y completará nombres de alumnos, grupo y aportes reales. No se atribuye el código generado a una implementación manual del alumno.
+Trabajo implementado y verificado por Codex con asistencia de IA a solicitud del usuario. Guillermo Willard revisará la entrega y validará sus aportes reales. No se atribuye el código generado a una implementación manual del alumno.
 
 ## Cartelera implementada
 
@@ -40,3 +40,24 @@ La adaptación móvil usa rejilla de dos columnas, una columna para anchos menor
 | T7 Hero | Contrato de props | Se recibe `movie` pero se lee `film.title`, que es undefined | Desestructurar y usar `movie` |
 
 Hay seis causas, no seis pruebas fallidas: varios verificadores detectan efectos de un mismo error. Los registros completos están en `02-ia-original.txt`, `05-fixed-inicial.txt` y `06-fixed-final.txt`.
+
+
+## Errores deliberados y navegador
+
+Se reprodujeron en una página local aislada `class` en vez de `className` y una lista sin `key`. Los mensajes reales están en `10-avisos-jsx.json`. Se provocaron dos nodos raíz con los analizadores de JSX de Vite/esbuild y Babel; los mensajes están en `12-dos-raices.txt`. La aplicación final conserva `className`, claves por id y un fragmento raíz.
+
+La demostración de XSS montó exclusivamente `ai/Synopsis.jsx` en una página local aislada, con la carga de la plantilla que solo establece `window.__xss=1`. Se observó una imagen inyectada y el indicador 1 (`11-xss-aislado.json`). No fue necesario introducir temporalmente HTML inseguro en `team/`; la misma operación se reprodujo con la implementación insegura original. En la aplicación final no se crean imágenes desde sinopsis/mensajes y el indicador queda undefined (`09-navegador.json`).
+
+La captura inicial muestra una página vacía: React aborta al lanzar el TODO de Header. La excepción está guardada en `03-error-inicial.json`; este entorno no añadió un recuadro rojo. No se atribuye ese recuadro a una ejecución que no lo produjo.
+
+Verificaciones del navegador: ocho tarjetas, ocho clasificaciones, cero imágenes rotas, destinos válidos de navegación, enlace de horarios operativo, enlaces tel y mailto presentes, ids únicos y consola sin errores. Sin desbordamiento horizontal en 1440, 390 y 320 píxeles. Las capturas 07 y 08 muestran el escritorio y la emulación móvil. La captura 15 corresponde al proyecto abierto en Visual Studio Code, recortada solo para excluir la barra de estado ajena al laboratorio.
+
+## Verificación final
+
+- `npm test`: 47 de 47 aprobadas.
+- `npm run duel`: 43 de 43 aprobadas.
+- `npm run duel:fixed`: 43 de 43 aprobadas.
+- `npm run build`: compilación correcta.
+- `ai/`, `duel/tests/`, los datos originales y `package-lock.json` sin cambios respecto de 861176c.
+
+Alumno indicado por el usuario: Guillermo Willard. Sin grupo por solicitud expresa. El nombre y correo de autor de los commits proceden de la configuración Git existente del equipo; no se modificó dicha configuración. No se consultó el campus virtual ni un proyecto previo de semana 8 que no fue proporcionado. No se simuló una entrega en GitHub o Canvas.

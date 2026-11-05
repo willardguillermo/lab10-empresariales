@@ -1,0 +1,22 @@
+
+> dae-s09-react-ia@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /Users/nissidev/Documents/Codex/2026-11-04/ayu/outputs/laboratorio-react
+
+ ✓ src/data/movies.test.js (4 tests) 2ms
+ ✓ src/duel/tests/T6-synopsis.test.jsx (5 tests) 21ms
+ ✓ src/duel/tests/T8-agentmessage.test.jsx (5 tests) 26ms
+ ✓ src/duel/tests/T4-showtimes.test.jsx (6 tests) 49ms
+ ✓ src/duel/tests/T7-hero.test.jsx (5 tests) 60ms
+ ✓ src/duel/tests/T1-header.test.jsx (5 tests) 61ms
+ ✓ src/duel/tests/T2-footer.test.jsx (6 tests) 67ms
+ ✓ src/duel/tests/T3-moviecard.test.jsx (6 tests) 110ms
+ ✓ src/duel/tests/T5-movielist.test.jsx (5 tests) 140ms
+
+ Test Files  9 passed (9)
+      Tests  47 passed (47)
+   Start at  20:48:08
+   Duration  742ms (transform 143ms, setup 397ms, collect 658ms, tests 536ms, environment 2.37s, prepare 380ms)
+

@@ -1,0 +1,6 @@
+Transform failed with 1 error:
+BadRoots.jsx:1:73: ERROR: Unterminated regular expression
+
+Babel JSX parser
+export default function BadRoots() { return (<h1>Title</h1><p>Text</p>); }
+Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (1:59)

@@ -1,0 +1,13 @@
+
+> dae-s09-react-ia@0.1.0 build
+> vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 40 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.67 kB │ gzip:  0.39 kB
+dist/assets/index-BFoFtc2u.css    6.40 kB │ gzip:  2.11 kB
+dist/assets/index-Cxe08TuU.js   229.85 kB │ gzip: 71.77 kB
+✓ built in 392ms
