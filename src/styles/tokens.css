@@ -1,0 +1,12 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #f4f0e7;
+  background: #101413;
+  line-height: 1.6;
+  font-synthesis: none;
+  --muted: #a8b4ad;
+  --accent: #ddf58c;
+  --surface: #1a201d;
+  --line: #354039;
+  --page-width: 1200px;
+}
