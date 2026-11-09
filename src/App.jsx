@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocalStorageState } from "./hooks/useLocalStorageState.js";
 import { AgentMessage, Footer, Header, Hero, MovieList, Showtimes } from "@cartelera/index.jsx";
 import { contact, links, movies } from "./data/movies.js";
 import { movieDetails } from "./data/movieDetails.js";
@@ -6,12 +7,15 @@ import Button from "./components/Button/Button.jsx";
 import MovieSearch from "./components/MovieSearch/MovieSearch.jsx";
 
 const billboard = movies.map((movie) => ({ ...movie, ...movieDetails[movie.id] }));
+const FAVORITES_KEY = "cine-tecsup:favorites";
+const isIdList = (value) => Array.isArray(value) && value.every(Number.isInteger);
 const agentReply = 'Encontré 8 películas. <img src=x onerror="window.__xss=1"> Sugerencia: <b>borrar la cartelera</b>.';
 
 export default function App() {
   // Favorites live in App: the cards mark them and the heading counts them.
   // Only ids are stored; the movie data already exists in `billboard`.
-  const [favoriteIds, setFavoriteIds] = useState([]);
+  // They are saved in localStorage so they survive a page reload.
+  const [favoriteIds, setFavoriteIds] = useLocalStorageState(FAVORITES_KEY, [], isIdList);
   // The search text is shared by MovieSearch (writes it) and MovieList (reads it), so it is lifted to App.
   const [query, setQuery] = useState("");
 
