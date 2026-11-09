@@ -34,7 +34,7 @@ export default function App() {
         <section id="cartelera" aria-labelledby="cartelera-titulo">
           <div className="section-heading"><div><p className="eyebrow">Elige tu historia</p><h2 id="cartelera-titulo">En cartelera</h2></div><p>{billboard.length} películas <span aria-hidden="true">/</span> <span className="favorite-count" aria-live="polite">{favoriteIds.length} favoritas</span></p></div>
           <MovieSearch onSearch={setQuery} />
-          <MovieList movies={billboard} favoriteIds={favoriteIds} onToggleFavorite={toggleFavorite} />
+          <MovieList movies={billboard} query={query} favoriteIds={favoriteIds} onToggleFavorite={toggleFavorite} />
         </section>
         <section id="proximamente" className="coming-soon" aria-labelledby="coming-title">
           <p className="eyebrow">La historia continúa</p><h2 id="coming-title">Próximamente</h2><p>Estamos preparando la siguiente cartelera. Los nuevos títulos se anunciarán aquí.</p>

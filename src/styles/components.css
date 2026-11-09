@@ -71,3 +71,7 @@
 @media (max-width: 350px) { .movie-list { grid-template-columns: 1fr; } }
 .favorite-toggle { align-self: flex-start; margin-bottom: .8rem; }
 .section-heading > p .favorite-count { margin: 0; color: var(--accent); }
+.empty-state { padding: 3rem 1.5rem; text-align: center; border: 1px dashed var(--line); background: var(--surface); }
+.empty-state__icon { font-size: 2rem; margin-bottom: .5rem; }
+.empty-state__title { font-size: 1.1rem; font-weight: 650; margin-bottom: .4rem; overflow-wrap: anywhere; }
+.empty-state .muted { font-size: .8rem; margin: 0; }
