@@ -10,8 +10,6 @@
 .hero-kicker { font-size: clamp(2.2rem, 4vw, 3.8rem); line-height: 1.04; letter-spacing: -.055em; font-weight: 650; margin-bottom: 2rem; }
 .hero h2 { font-size: 1.3rem; margin-bottom: .6rem; }
 .hero-meta { font-size: .8rem; color: #c0cfc3; }
-.button { background: var(--accent); color: #152016; display: inline-flex; align-items: center; gap: 2rem; padding: .8rem 1.2rem; font-size: .85rem; font-weight: 700; text-decoration: none; border-radius: 2px; margin-top: .8rem; }
-.button:active { transform: scale(.98); }
 .hero-art { position: relative; min-height: 440px; display: grid; place-items: center; background: repeating-linear-gradient(90deg, transparent 0 54px, #ffffff08 55px 56px); padding: 2rem; overflow: hidden; }
 .reel { position: absolute; color: #d8ee9d12; font-size: 24rem; font-weight: 800; line-height: 1; letter-spacing: -.1em; }
 .frame { position: relative; padding: .7rem; border: 1px solid #bdcda95c; background: #17271f; transform: rotate(7deg); width: 210px; }
