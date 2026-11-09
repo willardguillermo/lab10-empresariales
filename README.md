@@ -24,4 +24,6 @@ npm test
 
 Informe con observaciones y evidencias: [docs/INFORME-LAB10.md](docs/INFORME-LAB10.md) · [entregable en Word](docs/GuillermoWillard-Lab10.docx).
 
+Laboratorio extra (bandeja de aprobaciones): https://github.com/willardguillermo/lab10-empresarialesextra
+
 La documentación del laboratorio 9 se movió a [docs/lab09](docs/lab09/README-lab09.md).
