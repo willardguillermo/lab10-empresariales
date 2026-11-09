@@ -1,0 +1,16 @@
+ ✓ src/components/MovieSearch/MovieSearch.test.jsx (2 tests) 43ms
+ ✓ src/duel/team/MovieCard.favorite.test.jsx (3 tests) 42ms
+ ✓ src/duel/team/MovieList.filter.test.jsx (2 tests) 42ms
+ ✓ src/duel/tests/T4-showtimes.test.jsx (6 tests) 57ms
+ ✓ src/duel/tests/T2-footer.test.jsx (6 tests) 61ms
+ ✓ src/duel/tests/T7-hero.test.jsx (5 tests) 73ms
+ ✓ src/duel/tests/T3-moviecard.test.jsx (6 tests) 77ms
+ ✓ src/duel/tests/T1-header.test.jsx (5 tests) 78ms
+ ✓ src/duel/tests/T5-movielist.test.jsx (5 tests) 176ms
+ ✓ src/data/movies.test.js (4 tests) 2ms
+ ✓ src/duel/tests/T8-agentmessage.test.jsx (5 tests) 16ms
+ ✓ src/duel/tests/T6-synopsis.test.jsx (5 tests) 13ms
+ ✓ src/hooks/useLocalStorageState.test.jsx (3 tests) 8ms
+ ✓ src/components/Button/Button.test.jsx (4 tests) 35ms
+ Test Files  14 passed (14)
+      Tests  61 passed (61)

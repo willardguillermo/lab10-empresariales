@@ -1,0 +1,6 @@
+20:24:14.870  debug  [MovieSearch] pulsación: "d"
+20:24:14.953  debug  [MovieSearch] pulsación: "dr"
+20:24:15.036  debug  [MovieSearch] pulsación: "dra"
+20:24:15.121  debug  [MovieSearch] pulsación: "dram"
+20:24:15.205  debug  [MovieSearch] pulsación: "drama"
+20:24:15.611  info   [MovieSearch] filtro aplicado: "drama"
