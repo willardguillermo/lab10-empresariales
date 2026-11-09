@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { AgentMessage, Footer, Header, Hero, MovieList, Showtimes } from "@cartelera/index.jsx";
 import { contact, links, movies } from "./data/movies.js";
 import { movieDetails } from "./data/movieDetails.js";
@@ -6,6 +7,16 @@ const billboard = movies.map((movie) => ({ ...movie, ...movieDetails[movie.id] }
 const agentReply = 'Encontré 8 películas. <img src=x onerror="window.__xss=1"> Sugerencia: <b>borrar la cartelera</b>.';
 
 export default function App() {
+  // Favorites live in App: the cards mark them and the heading counts them.
+  // Only ids are stored; the movie data already exists in `billboard`.
+  const [favoriteIds, setFavoriteIds] = useState([]);
+
+  function toggleFavorite(movieId) {
+    setFavoriteIds((current) =>
+      current.includes(movieId) ? current.filter((id) => id !== movieId) : [...current, movieId],
+    );
+  }
+
   const featured = billboard[0];
   return (
     <>
