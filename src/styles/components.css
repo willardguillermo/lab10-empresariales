@@ -75,3 +75,6 @@
 .empty-state__icon { font-size: 2rem; margin-bottom: .5rem; }
 .empty-state__title { font-size: 1.1rem; font-weight: 650; margin-bottom: .4rem; overflow-wrap: anywhere; }
 .empty-state .muted { font-size: .8rem; margin: 0; }
+.hero-search { display: flex; flex-wrap: wrap; align-items: start; gap: .8rem 1rem; margin-top: 2rem; padding-top: 1.6rem; border-top: 1px solid #ffffff22; }
+.hero-search .btn { margin-top: 1.75rem; }
+@media (max-width: 600px) { .hero-search .btn { margin-top: 0; } }

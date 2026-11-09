@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AgentMessage, Footer, Header, Hero, MovieList, Showtimes } from "@cartelera/index.jsx";
 import { contact, links, movies } from "./data/movies.js";
 import { movieDetails } from "./data/movieDetails.js";
+import Button from "./components/Button/Button.jsx";
 import MovieSearch from "./components/MovieSearch/MovieSearch.jsx";
 
 const billboard = movies.map((movie) => ({ ...movie, ...movieDetails[movie.id] }));
@@ -26,14 +27,16 @@ export default function App() {
       <a className="skip-link" href="#contenido">Saltar al contenido</a>
       <Header name="Cine Tecsup" links={links} />
       <main id="contenido">
-        <Hero movie={featured} />
+        <Hero movie={featured}>
+          <MovieSearch onSearch={setQuery} label="¿Qué quieres ver hoy?" />
+          <Button href="#cartelera" variant="secondary">Ver cartelera <span aria-hidden="true">↓</span></Button>
+        </Hero>
         <section className="today-strip" aria-labelledby="today-title">
           <div><p className="eyebrow">Tu próxima función</p><h2 id="today-title">Hoy en {featured.title}</h2></div>
           <Showtimes times={featured.showtimes} />
         </section>
         <section id="cartelera" aria-labelledby="cartelera-titulo">
           <div className="section-heading"><div><p className="eyebrow">Elige tu historia</p><h2 id="cartelera-titulo">En cartelera</h2></div><p>{billboard.length} películas <span aria-hidden="true">/</span> <span className="favorite-count" aria-live="polite">{favoriteIds.length} favoritas</span></p></div>
-          <MovieSearch onSearch={setQuery} />
           <MovieList movies={billboard} query={query} favoriteIds={favoriteIds} onToggleFavorite={toggleFavorite} />
         </section>
         <section id="proximamente" className="coming-soon" aria-labelledby="coming-title">
