@@ -22,6 +22,6 @@ npm test
 - `MovieList` filtra por título o género y muestra un estado vacío.
 - Favoritas guardadas en `localStorage` (`useLocalStorageState`).
 
-Informe con observaciones y evidencias: [docs/INFORME-LAB10.md](docs/INFORME-LAB10.md).
+Informe con observaciones y evidencias: [docs/INFORME-LAB10.md](docs/INFORME-LAB10.md) · [entregable en Word](docs/GuillermoWillard-Lab10.docx).
 
 La documentación del laboratorio 9 se movió a [docs/lab09](docs/lab09/README-lab09.md).
