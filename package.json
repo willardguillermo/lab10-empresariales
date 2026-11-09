@@ -1,8 +1,8 @@
 {
-  "name": "dae-s09-react-ia",
+  "name": "dae-s10-componentes-eventos",
   "private": true,
-  "version": "0.1.0",
-  "description": "Laboratorio extra de la semana 9 (DAE): React revisado por pruebas",
+  "version": "0.2.0",
+  "description": "Laboratorio 10 (DAE): componentes y eventos sobre la cartelera del laboratorio 9",
   "type": "module",
   "engines": {
     "node": ">=20"
