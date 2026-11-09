@@ -10,3 +10,10 @@
   --line: #354039;
   --page-width: 1200px;
 }
+:root {
+  --danger: #ffb4a8;
+  --radius: 2px;
+  --focus-ring: 3px solid var(--accent);
+  --text-sm: .8rem;
+  --text-base: .95rem;
+}
